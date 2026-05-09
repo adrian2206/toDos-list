@@ -13,6 +13,7 @@ Features
 📅 Date Handling — Uses date-fns for clean and reliable date formatting and manipulation.
 🧩 Modular Architecture — Application logic is cleanly separated from DOM manipulation using ES6 modules.
 
+
 Tech Stack
 
    JavaScript (ES6+)
