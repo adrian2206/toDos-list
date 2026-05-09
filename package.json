@@ -1,5 +1,5 @@
 {
-  "name": "webpack-template",
+  "name": "todo-list",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/adrian2206/webpack-template/issues"
   },
