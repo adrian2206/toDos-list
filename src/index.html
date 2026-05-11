@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyTasks</title>
 </head>
 <body>
     <div class="container">
         <!-- SIDEBAR -->
-        <section class="sidebar"></section>
+        <section class="sidebar">
+            <div class="sidebar-header">
+                <h1>MyTasks</h1>
+                <p>Stay organized</p>
+            </div>
+            <nav class="sidebar-nav">
+                <h3>Views</h3>
+                <ul class="nav-list">
+                    <li>All tasks</li>
+                    <li>Today</li>
+                    <li>Upcoming</li>
+                    <li>Completed</li>
+                </ul>
+                <h3>Projects</h3>
+                <ul class="nav-list" id="projects-list">
+                </ul>
+                <button class="btn-add-project" type="button">+ New Project</button>
+            </nav>
+        </section>
         <!-- MAIN -->
         <section class="main-content">
             <div class="main-header">
                 <div class="main-title-row">
-                    <h1>All Tasks</h1>
+                    <h2>All Tasks</h2>
                     <div class="count-chip">1</div>
                 </div>
                 <button class="btn-new-task" type="button">+New Task</button>
             </div>
+            <div class="filter-row">
+                <ul>
+                    <li class="filter-tab filter-active">All</li>
+                    <li class="filter-tab">Today</li>
+                    <li class="filter-tab">Upcoming</li>
+                    <li class="filter-tab">Completed</li>
+                </ul>
+            </div>
+            <ul class="tasks-list" id="tasks-list"></ul>
         </section>
         <!-- DETAIL PANEL -->
         <section class="detail-panel"></section>

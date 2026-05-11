@@ -144,7 +144,7 @@ body {
     align-items: center;
 }
 
-.main-title-row h1 {
+.main-title-row h2 {
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--color-text-primary);
@@ -174,4 +174,25 @@ body {
     display: flex;
     gap: var(--space-xs);
     align-items: center;
+}
+
+.btn-new-task:focus,
+.btn-new-task:hover {
+    background: var(--color-accent-hover);
+}
+
+.filter-row {
+    padding: 0 var(--space-xl);
+}
+
+.filter-row ul {
+    list-style: none;
+    flex-shrink: 0;
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.filter-tab {
+    font-size: var(--text-xs);
+    cursor: pointer;
 }
