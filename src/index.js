@@ -1,10 +1,11 @@
 import './styles.css';
 import { loadFromStorage } from './storage.js';
-import { createProjectManager } from './projectmanager.js';
+import { createProjectManager } from './projectManager.js';
 import { renderSidebar, renderTasks } from './ui.js';
+import { initEvents } from './EventListeners.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const manager = loadFromStorage() ?? createProjectManager()
-    renderSidebar(manager)
-    renderTasks(manager, manager.projectsManager[0].uuid)
-})
+
+const manager = loadFromStorage() ?? createProjectManager();
+renderSidebar(manager);
+renderTasks(manager, manager.projectsManager[0].uuid);
+initEvents(manager);

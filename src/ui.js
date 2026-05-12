@@ -22,3 +22,13 @@ export function renderTasks(manager, projectId) {
         tasksList.appendChild(task);
     });
 };
+
+export function showProjectForm() {
+    const projectsList = document.querySelector('#projects-list');
+    projectsList.insertAdjacentHTML('beforeend', `
+        <li class="input-project-name">
+            <input type="text" id="project-name" placeholder="Project name..." required/>
+            <button class="btn-confirm-project" id="btn-confirm-project" type="submit">✓</button>
+        </li>
+    `);
+};
