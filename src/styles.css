@@ -101,6 +101,8 @@ body {
     overflow: hidden;
 }
 
+/* SIDEBAR */
+
 .sidebar {
   width: 220px;
   min-width: 220px;
@@ -110,6 +112,25 @@ body {
   border-right: 1px solid --color-border;
 }
 
+.new-project-form {
+    display: none;
+}
+
+.new-project-form.visible {
+    display: flex;
+}
+
+
+.project-menu-hidden {
+    display: none;
+}
+
+.btn-project-menu img {
+    pointer-events: none;
+}
+
+/* TASKS */
+
 .main-content {
   flex: 1;
   height: 100%;
@@ -117,23 +138,6 @@ body {
   background: var(--color-bg-main);
   display: flex;
   flex-direction: column;
-}
-
-.detail-panel {
-  width: 280px;
-  min-width: 280px;
-  height: 100%;
-  overflow-y: auto;
-  background: var(--color-surface);
-  border-left: 1px solid var(--color-border);
-}
-
-.new-project-form {
-    display: none;
-}
-
-.new-project-form.visible {
-    display: flex;
 }
 
 .main-header {
@@ -204,3 +208,16 @@ body {
     font-size: var(--text-xs);
     cursor: pointer;
 }
+
+/* TASKS DETAILS */
+
+.detail-panel {
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+}
+
+
